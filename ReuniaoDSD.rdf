@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD/"
+     xml:base="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#apresenta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#apresenta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:comment>Faz uso para apresentação da Reunião Online e dos Conteúdos.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#numParticipantes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#numParticipantes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+        <rdfs:comment>Define o número de Participantes na Reunião Online para futura escolha da Ferramenta.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:comment>Determina a origem geográfica de onde a reunião é organizada ou onde os participantes estão localizados.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#possui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#possui">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+        <rdfs:comment>Faz uso para as Reuniões Online definindo quais Participantes envolvidos.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:comment>Tipo de material suportado pela ferramenta ou apresentado na reunião.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao"/>
+        <rdfs:comment>Faz uso para a Reunião Online e quais Ferramentas de Comunicação vão ser usadas.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Africa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Africa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:label>Africa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#America -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#America">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:label>America</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Arquivos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Arquivos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Arquivos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Asia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Asia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:label>Asia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Audio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>O Conteúdo define o que vai ser apresentado nas Ferramentas de Comunicação de escolha.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Iniciamos a reunião partindo dos Continentes, o foco aqui é buscar um melhor fuso horário para a reunião acontecer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Convidado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Convidado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Organizador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Europa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Europa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:label>Europa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#GoogleMeet"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#MicrosoftTeams"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Zoom"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Essas ferramentas podem ser usadas para cada tipo de apresentação e o número de participantes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#GoogleMeet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#GoogleMeet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Audio"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Slide"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#numParticipantes"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">250</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao"/>
+        <rdfs:label>GoogleMeet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#MicrosoftTeams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#MicrosoftTeams">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Arquivos"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Quadro"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Slide"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#numParticipantes"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">300</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao"/>
+        <rdfs:label>MicrosoftTeams</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Oceania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Oceania">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+        <rdfs:label>Oceania</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Organizador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Organizador">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Aqui temos dois tipos de participantes o que organiza a reunião e os convidados locais e de outros continentes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Quadro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Quadro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Quadro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#origemReuniao"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Continente"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#utiliza"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#possui"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Participante"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Nosso foco principal dentro da ontologia, aonde tudo começa para definição de escolha sobre as outras subclasses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoPlanejamentoSprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoPlanejamentoSprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoRevisaoSprint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoRevisaoSprint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoRevisaoSprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#ReuniaoOnline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Slide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Slide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Slide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Telas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Telas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Telas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+        <rdfs:label>Video</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Zoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Zoom">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#tipoConteudo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Conteudo"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#numParticipantes"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1000</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#FerramentaComunicacao"/>
+        <rdfs:label>Zoom</rdfs:label>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Africa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#America"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Asia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Europa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Oceania"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Arquivos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Audio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Quadro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Slide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Telas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Video"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#GoogleMeet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#MicrosoftTeams"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/adjailson/ontologies/2025/0/ReuniaoDSD#Zoom"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
