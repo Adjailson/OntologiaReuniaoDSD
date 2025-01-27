@@ -60,7 +60,7 @@ Contribuições são bem-vindas! Caso tenha sugestões, correções ou melhorias
 
 ## Contato
 Para dúvidas ou mais informações, entre em contato pelo GitHub ou envie um e-mail para:
-- **Adjailson Silva**: [GitHub Profile](https://github.com/Adjailson)
+- **Adjailson Ferreira**: [GitHub Profile](https://github.com/Adjailson)
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais informações.
